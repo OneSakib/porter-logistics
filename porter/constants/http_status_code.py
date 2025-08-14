@@ -1,0 +1,5 @@
+class HTTP_STATUS_CODE(object):
+    OK = 200
+    REDIRECT = 300
+    BAD_REQUEST = 400
+    UN_AUTHORIZED = 401

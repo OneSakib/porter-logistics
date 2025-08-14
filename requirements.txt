@@ -1,0 +1,6 @@
+pytest
+requests
+requests-mock
+jwt
+cachetools
+python-dotenv
