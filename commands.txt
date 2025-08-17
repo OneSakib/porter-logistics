@@ -2,7 +2,4 @@
 pip install setuptools wheel
 
 # Build the package
-python setup.py sdist bdist_wheel
-
-# Install it locally
-pip install dist/nimbus-0.1.0-py3-none-any.whl
+pip install setuptools wheel twine

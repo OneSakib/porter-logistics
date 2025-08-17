@@ -6,9 +6,9 @@ setup(
     description="A Python SDK for Porter Logistics shipping platform API",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    author="Your Name",
-    author_email="your.email@example.com",
-    url="https://github.com/yourusername/porter-logistics",  
+    author="Sakib Malik",
+    author_email="maliksakib347@gmail.com",
+    url="https://github.com/OneSakib/porter-logistics",  
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
         "requests>=2.25.1", 

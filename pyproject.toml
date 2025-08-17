@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "porter-logistics-python-sdk"
+version = "0.1.0"
+description = "A Python SDK for Porter Logistics"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name="Sakib Malik", email="maliksakib347@gmail.com"}
+]
+keywords = ["porter", "logistics", "sdk"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/OneSakib/porter-logistics-python-sdk"
+"Bug Tracker" = "https://github.com/OneSakib/porter-logistics-python-sdk/issues"
