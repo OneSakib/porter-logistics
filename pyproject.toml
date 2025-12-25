@@ -1,24 +1,61 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "porter-logistics-python-sdk"
-version = "0.1.0"
-description = "A Python SDK for Porter Logistics"
+name = "nimbuspost"
+version = "1.0.0"
+description = "Python SDK for NimbusPost Shipping APIs"
 readme = "README.md"
-requires-python = ">=3.8"
-license = {file = "LICENSE"}
 authors = [
-    {name="Sakib Malik", email="maliksakib347@gmail.com"}
+    {name = "Sakib Malik", email = "sakibmaliknakur347@gmail.com"}
 ]
-keywords = ["porter", "logistics", "sdk"]
+license = {text = "MIT"}
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["nimbuspost", "shipping", "logistics", "api", "sdk"]
+dependencies = [
+    "requests>=2.28.0",
+    "python-dateutil>=2.8.0",
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=22.0",
+    "isort>=5.0",
+    "flake8>=5.0",
+    "mypy>=0.990",
+    "pre-commit>=2.20",
+]
+docs = [
+    "sphinx>=5.0",
+    "sphinx-rtd-theme>=1.0",
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/OneSakib/porter-logistics-python-sdk"
-"Bug Tracker" = "https://github.com/OneSakib/porter-logistics-python-sdk/issues"
+Homepage = "https://github.com/onesakib/nimbuspost"
+Documentation = "https://nimbuspost.readthedocs.io"
+Repository = "https://github.com/onesakib/nimbuspost"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=nimbuspost --cov-report=html --cov-report=term"

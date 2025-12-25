@@ -1,5 +1,0 @@
-# Install build tool if not already
-pip install setuptools wheel
-
-# Build the package
-pip install setuptools wheel twine
